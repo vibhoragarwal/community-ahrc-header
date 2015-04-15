@@ -1,0 +1,11 @@
+<ahrc = 'www.google.com'>
+<ahrcmixin = 'www.abc.com'>
+<jmix = 'http://www.jahia.org/jahia/mix/1.0'>
+<jnt = 'http://www.jahia.org/jahia/nt/1.0'>
+<mix = 'http://www.jcp.org/jcr/mix/1.0'>
+
+[ahrcmixin:ahrcHeaderMixin] > jmix:deletedChildren, jmix:droppableContent mixin
+
+[ahrc:ahrcHeader] > jnt:content, ahrcmixin:ahrcHeaderMixin, mix:title
+ - image (weakreference, picker[type='image']) mandatory
+
